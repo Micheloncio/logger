@@ -1,0 +1,1 @@
+A Logger in ES6 to print logs in a .txt file

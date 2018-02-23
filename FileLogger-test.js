@@ -1,4 +1,4 @@
-//js para testear que funciona FileLogger
+//js para testear que funciona FileLogger / no es TDD...
 
 const { FileLogger } = require('.')
 
