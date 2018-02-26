@@ -6,20 +6,11 @@ class Logger{
 	}
 
 	createMessage(level,message){//metodo para construir el mensaje
-		this.print(level, `${level} ${new Date()} ${this.name}: ${message}`)
+		this.print(`${level} ${new Date()} ${this.name}: ${message}`, level)
 	}
 
-	print(level,message){//metodo para printar por consola el mensage 
-		switch(level)
-		{
-			case 'DEBUG':
-				return console.log(message)
-			case 'INFO':
-				return console.info(message)
-			case 'WARN':
-				return console.warn(message)
-		}
-		console.error(message)
+	print(message){//metodo para printar el mensaje 
+		return message
 	}
 
 	debug(message){

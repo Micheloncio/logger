@@ -8,7 +8,7 @@ class FileLogger extends Logger{
 		this.ws = fs.createWriteStream(file)	//creo un streaming de escritura
 	}
 
-	print(level, message){	//aquí se sobrescribe esta función de la clase padre
+	print(message){	//metodo para printar en un archivo el mensaje 
 		this.ws.write(`${message}\n`)			//escribo en el fichero
 	}
 }
